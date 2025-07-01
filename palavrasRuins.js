@@ -1,12 +1,16 @@
 export const PALAVRAS_RUINS = new Set([
-    ""
-    "que"
-    "uô"
-    "nosso"
-    "os"
-    "Ô"
-    "E"
-    "No"  
+    "ser",
+    "pra",
+    "nosso",
+    "era",
+    "vi",
+    "que",
+    "uô",
+    "nosso",
+    "os",
+    "Ô",
+    "E",
+    "No", 
     "que",
     "para",
     "com",
