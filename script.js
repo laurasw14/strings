@@ -20,7 +20,7 @@ function processaTexto(texto) {
   let palavras = texto.split(/\P{L}+/u);
     for (let i in palavras) {
       palavras = tiraPalavrasRuins(palavras);
-      palavras[i] = palavras[i].toLowerCase();
+      //palavras[i] = palavras[i].toLowerCase();
 }
 
 /*let frequencias = {};
