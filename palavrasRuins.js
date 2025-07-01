@@ -1,4 +1,18 @@
 export const PALAVRAS_RUINS = new Set([
+    "mais",
+    "meu",
+    "de",
+    "virão",
+    "outras",
+    "te",
+    "se",
+    "você",
+    "nos",
+    "era",
+    "gente",
+    "a",
+    "uma",
+    "já" ,   
     "ser",
     "pra",
     "nosso",
@@ -133,5 +147,4 @@ export const PALAVRAS_RUINS = new Set([
     "uma vez",
     "segundo",
     "junto"
-
 ]);
