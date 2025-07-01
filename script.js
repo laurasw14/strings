@@ -19,7 +19,7 @@ function processaTexto(texto) {
   //let palavras = texto.split(/[^a-zA-Z]+/);
   let palavras = texto.split(/\P{L}+/u);
     for (let i in palavras) {
-      //palavras = tiraPalavrasRuins(palavras);
+      palavras = tiraPalavrasRuins(palavras);
       palavras[i] = palavras[i].toLowerCase();
 }
 
@@ -79,7 +79,7 @@ function tiraPalavrasRuins(palavras) {
 
   for (let palavra of palavras) {
     if (palavra.length > 2) {
-      palavrasBoas.push(palavra);
+      palavrasBoas.push(palavras);
     }
   }
 
