@@ -18,6 +18,9 @@ function processaTexto(texto) {
   //let palavras = texto.split(/\s+/);
   //let palavras = texto.split(/[^a-zA-Z]+/);
   let palavras = texto.split(/\P{L}+/u);
+    for (let i in palavras) {
+      palavras[i] = palavras[i].toLowerCase();
+}
 
 /*let frequencias = {};
  for (let i of palavras) {
