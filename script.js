@@ -19,6 +19,7 @@ function processaTexto(texto) {
   //let palavras = texto.split(/[^a-zA-Z]+/);
   let palavras = texto.split(/\P{L}+/u);
     for (let i in palavras) {
+      palavras = tiraPalavrasRuins(palavras);
       palavras[i] = palavras[i].toLowerCase();
 }
 
@@ -70,6 +71,19 @@ function contaFrequencias(palavras) {
 
 function ordenaPalavra(p1, p2) {
   return frequencias[p2] - frequencias[p1];
+}
+
+
+function tiraPalavrasRuins(palavras) {
+  const palavrasBoas = [];
+
+  for (let palavra of palavras) {
+    if (palavra.length > 2) {
+      palavrasBoas.push(palavra);
+    }
+  }
+
+  return palavrasBoas;
 }
 
 
